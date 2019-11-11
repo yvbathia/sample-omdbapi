@@ -1,0 +1,16 @@
+{
+  "name": "next-omdb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "9.1.3",
+    "next-routes": "^1.4.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
+  }
+}
