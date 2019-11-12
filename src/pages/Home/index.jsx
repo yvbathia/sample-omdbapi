@@ -20,9 +20,9 @@ const Home = ({ data }) => {
       `http://www.omdbapi.com/?apikey=7f90658b&s=${searchText}`
     );
     const data = await res.json();
-    if(data && data.Error){
+    if (data && data.Error) {
       alert("Movie Not Found");
-      setSearchText('');
+      setSearchText("");
     }
     if (data && data.Search) {
       setMovieState(data.Search);
@@ -39,6 +39,11 @@ const Home = ({ data }) => {
           value={searchText}
           onChange={e => {
             setSearchText(e.target.value);
+          }}
+          onKeyDown={(e) => {
+            if(e.keyCode === 13){
+              handelOnSubmit();
+            }
           }}
         />
         <button type="button" onClick={handelOnSubmit} className={s.searchBtn}>
