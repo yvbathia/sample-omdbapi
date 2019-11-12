@@ -17,7 +17,7 @@ const Home = ({ data }) => {
   const [searchText, setSearchText] = useState("");
   const handelOnSubmit = async e => {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=7f90658b&s=${searchText}`
+      `http://www.omdbapi.com/?apikey=7f90658b&s=${searchText.replace(' ','+')}`
     );
     const data = await res.json();
     if (data && data.Error) {

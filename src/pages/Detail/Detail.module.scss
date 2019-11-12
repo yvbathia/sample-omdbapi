@@ -1,0 +1,48 @@
+.root {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.poster {
+    float: left;
+    padding: 10px;
+}
+
+.component {
+  display: grid;
+  grid-template-columns: [first] 100px auto;
+
+  border: 1px solid;
+  padding: 10px;
+}
+
+.title {
+  text-align: left;
+  width: 100px;
+}
+
+.details {
+  border-left: 1px dotted;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.text {
+  text-align: left;
+}
+
+.btn {
+  text-align: right;
+}
+
+.backBtn {
+  font-size: 16px;
+  background-color: #2A9BC6;
+}
