@@ -1,0 +1,37 @@
+.root {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.component {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.title {
+  text-align: left;
+  width: 500px;
+}
+
+.details {
+  border-left: 1px dotted;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.searchText {
+  width: 50%;
+  height: 25px;
+}
+
+.searchBtn {
+  width: 20%;
+  height: 29px;
+}
